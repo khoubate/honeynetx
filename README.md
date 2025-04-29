@@ -24,7 +24,7 @@ Before deploying, ensure you have:
 - ✅ [Terraform](https://developer.hashicorp.com/terraform/downloads) v1.0+  
 - ✅ Python 3 with pip  
 - ✅ [Docker](https://www.docker.com/) (optional but recommended)  
-
+- ✅ [T-Pot - The All In One Multi Honeypot Platform](https://github.com/telekom-security/tpotce) (Deutsche Telekom Security GmbH Github)
 ---
 
 ## 🚀 Deployment Steps
@@ -51,7 +51,7 @@ terraform apply  # Confirm with 'yes'
 ssh azureuser@$(terraform output -raw public_ip)
 wget https://github.com/telekom-security/tpotce/raw/master/install.sh -O tpot-install.sh
 chmod +x tpot-install.sh
-sudo ./tpot-install.sh
+./tpot-install.sh
 ```
 
 🔘 *Choose "Hive" installation type when prompted.*
@@ -98,6 +98,7 @@ python3 scripts/generate_report.py
 │   ├── run_checkov.sh       # IaC scanner
 │   ├── run_prowler.sh       # Azure scanner
 │   └── generate_report.py   # Combines results
+│   └── install_hnetx        # HoneyNetX installation script 
 └── outputs/
     ├── checkov/             # Checkov output
     ├── prowler/             # Prowler output
@@ -186,11 +187,16 @@ terraform destroy
 ---
 
 ## 📸 Screenshots
-
+![Tpot Web UI](screenshots/t-pot-menu.png)  
 ![Live Attack Map](screenshots/attack-map.png)  
 *T-Pot's real-time attack visualization.*
+![Kibana Dashboard](screenshots/Kibana-tpot-sum.png)
+![](screenshots/kibana-tpot-stat.png)
+![](screenshots/kibana-tpot.png)
+![Kibana Attack Map](screenshots/kibana-Attack-map.png)
+*T-Pot's real-time attack visualization.*
 
-![Security Report](screenshots/sample-report.png)  
+![Security Report](outputs/reports/security_report.pdf)  
 *Example output from automated scanning.*
 
 ---
