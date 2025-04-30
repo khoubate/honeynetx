@@ -56,7 +56,7 @@ chmod +x tpot-install.sh
 
 🔘 *Choose "Hive" installation type when prompted.*
 
-![T-Pot Installation](screenshots/tpot-install.png)
+🔘 *Complete the installation and set up the web username and password, once complete restart the VM*
 
 ---
 
@@ -187,17 +187,18 @@ terraform destroy
 ---
 
 ## 📸 Screenshots
-![Tpot Web UI](screenshots/t-pot-menu.png)  
 ![Live Attack Map](screenshots/attack-map.png)  
 *T-Pot's real-time attack visualization.*
 ![Kibana Dashboard](screenshots/Kibana-tpot-sum.png)
 ![](screenshots/kibana-tpot-stat.png)
 ![](screenshots/kibana-tpot.png)
 ![Kibana Attack Map](screenshots/kibana-Attack-map.png)
-*T-Pot's real-time attack visualization.*
+
+🔘 *T-Pot's real-time attack visualization.*
 
 ![Security Report](outputs/reports/security_report.pdf)  
-*Example output from automated scanning.*
+
+🔘 *Example output from automated scanning.*
 
 ---
 
