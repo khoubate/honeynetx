@@ -11,7 +11,7 @@ This lab automates the deployment of a security-focused environment in Azure fea
 - **Automated Reporting**: Generates combined PDF and Markdown security reports.
 
 ![Honeynet Dashboard](screenshots/honeynet-dashboard.png)  
-*Example of a live attack dashboard.*
+
 
 ---
 
@@ -189,10 +189,10 @@ terraform destroy
 ## 📸 Screenshots
 ![Live Attack Map](screenshots/attack-map.png)  
 *T-Pot's real-time attack visualization.*
-![Kibana Dashboard](screenshots/Kibana-tpot-sum.png)
+![Kibana Dashboard](screenshots/kibana-tpot-sum.png)
 ![](screenshots/kibana-tpot-stat.png)
 ![](screenshots/kibana-tpot.png)
-![Kibana Attack Map](screenshots/kibana-Attack-map.png)
+![Kibana Attack Map](screenshots/kibana-attack-map.png)
 
 🔘 *T-Pot's real-time attack visualization.*
 
